@@ -16,8 +16,6 @@
 - [Project Deliverables](#project-deliverables)
 - [Limitations](#limitations)
 - [Potential Extensions](#potential-extensions)
-- [Note](#note)
-- [Author](#author)
 
 ---
 
