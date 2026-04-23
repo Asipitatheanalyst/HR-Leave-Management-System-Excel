@@ -1,4 +1,4 @@
-# 📊 HR Leave Management System (Excel / Google Sheets Project)
+# 📊 HR Leave Management System (Excel)
 
 ---
 
@@ -96,3 +96,85 @@ The system relies on Excel/Google Sheets formulas such as:
 ### Total Leave Calculation
 ```excel
 =SUMIFS(LeaveLog!F:F,LeaveLog!B:B,A2,LeaveLog!C:C,"Sick Leave",LeaveLog!G:G,"Approved")
+
+```
+
+ ### Number of Leave Days
+ ```excel
+=DATEDIF(StartDate,EndDate,"d")+1
+```
+
+### Employee Lookup
+ ```excel
+=VLOOKUP(A2,Employees!A:B,2,FALSE)
+```
+
+### Dynamic Employee List
+ ```excel
+=UNIQUE(LeaveLog!B:B)
+```
+
+## 📌 Dashboard & Visual Design
+
+The Summary Sheet functions as a lightweight HR dashboard featuring:
+
+- Leave usage per employee  
+- Remaining leave balances  
+- Conditional formatting:  
+  - 🔴 Red → No leave remaining  
+  - 🟡 Yellow → Low balance  
+  - 🟢 Green → Healthy balance  
+- Automated updates based on new entries  
+
+---
+
+## 📌 Key Insights
+
+- Leave usage varies significantly across employees  
+- Sick leave is typically taken in smaller, frequent intervals  
+- Annual leave is usually taken in bulk periods  
+- The system helps identify employees nearing leave exhaustion  
+- Automation reduces manual HR workload  
+
+---
+
+## 📌 Tools Used
+
+- Microsoft Excel / Google Sheets  
+- Data Validation (Dropdown lists)  
+- Conditional Formatting  
+- SUMIFS, DATEDIF, VLOOKUP, IF functions  
+- Google Forms (optional input method)  
+
+---
+
+## 📌 Project Deliverables
+
+- Automated Leave Management System  
+- Structured Leave Log database  
+- Dynamic Summary Dashboard  
+- Conditional formatting alerts system  
+- Scalable HR tracking framework  
+
+---
+
+## 📌 Limitations
+
+- No payroll integration  
+- Manual approval process required  
+- No automated notifications (email/SMS)  
+- Designed for small to medium teams  
+
+---
+
+## 📌 Potential Extensions
+
+This project can be extended into:
+
+- Power BI HR Analytics Dashboard  
+- Automated approval workflows (Google Apps Script)  
+- Email notification system for leave requests  
+- Payroll system integration   
+
+
+
