@@ -77,15 +77,21 @@ The project is built using three core components:
 ### 1. Leave Request Input Sheet
 - Captures raw leave requests via form
 
+https://forms.gle/azLXLp68RVP1zqGv6
+
 ### 2. Leave Log (Main Database)
 - Stores all validated leave records
 - Contains calculated fields such as number of leave days
 - Acts as the central data source
 
+<img width="1012" height="537" alt="Leave Log" src="https://github.com/user-attachments/assets/93a8a636-e4ed-488f-81c1-3785316d84b7" />
+
 ### 3. Summary Dashboard Sheet
 - Aggregates leave usage per employee
 - Calculates remaining leave balances
 - Provides HR overview and insights
+
+<img width="1366" height="617" alt="Summary" src="https://github.com/user-attachments/assets/f0894c9c-2734-404b-a200-cf615169526e" />
 
 ---
 
